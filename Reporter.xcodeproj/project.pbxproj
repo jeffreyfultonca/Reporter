@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		003E6CC51E56C69900BBC2AF /* Reporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 003E6CC31E56C69900BBC2AF /* Reporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003E6CCC1E56C6B200BBC2AF /* Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003E6CCB1E56C6B200BBC2AF /* Reporter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		003E6CC01E56C69900BBC2AF /* Reporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		003E6CC31E56C69900BBC2AF /* Reporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reporter.h; sourceTree = "<group>"; };
 		003E6CC41E56C69900BBC2AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003E6CCB1E56C6B200BBC2AF /* Reporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reporter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		003E6CC21E56C69900BBC2AF /* Reporter */ = {
 			isa = PBXGroup;
 			children = (
+				003E6CCB1E56C6B200BBC2AF /* Reporter.swift */,
 				003E6CC31E56C69900BBC2AF /* Reporter.h */,
 				003E6CC41E56C69900BBC2AF /* Info.plist */,
 			);
@@ -96,6 +99,7 @@
 					003E6CBF1E56C69900BBC2AF = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4DN5KQR8W8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003E6CCC1E56C6B200BBC2AF /* Reporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +184,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -226,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -240,6 +245,7 @@
 		003E6CC91E56C69900BBC2AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4DN5KQR8W8;
@@ -252,6 +258,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.jeffreyfulton.Reporter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +266,7 @@
 		003E6CCA1E56C69900BBC2AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4DN5KQR8W8;
