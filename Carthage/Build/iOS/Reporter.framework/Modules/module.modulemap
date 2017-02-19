@@ -1,0 +1,10 @@
+framework module Reporter {
+  umbrella header "Reporter.h"
+
+  export *
+  module * { export * }
+}
+
+module Reporter.Swift {
+    header "Reporter-Swift.h"
+}
