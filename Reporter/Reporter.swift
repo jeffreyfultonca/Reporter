@@ -17,13 +17,16 @@ public enum Reporter {
      
      Use when the error is a serious programming error but will not inevitably crash the app. i.e. Nil Storyboard segue identifier when all segues should have an identifier.
      */
-    public static func assertionFailure(
-        _ message: @autoclosure () -> String,
-        file: StaticString = #file,
-        line: UInt = #line)
-    {
-        Swift.assertionFailure(message, file: file, line: line)
-    }
+    
+    // Not working when imported as framework via Carthage. Presumably because they are build as release.
+    
+//    public static func assertionFailure(
+//        _ message: @autoclosure () -> String,
+//        file: StaticString = #file,
+//        line: UInt = #line)
+//    {
+//        Swift.assertionFailure(message, file: file, line: line)
+//    }
     
     /**
      Report message for recoverable error condition.
